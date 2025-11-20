@@ -1,0 +1,27 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:alpine-3.20",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        // Hide workspace files to make it seem like a blank working environment
+        "files.exclude": {
+          "**/.git": false,
+          "**/.codespaces": true,
+          "**/getting-started-with-git": true
+        },
+
+        // Show everything for Git graph
+        "scm.graph.showIncomingChanges": true,
+        "scm.graph.showOutgoingChanges": true,
+        "scm.defaultViewMode": "tree",
+        "scm.graph.badges": "all",
+
+        // Automatically show panel for terminal
+        "workbench.panel.opensMaximized": "always"
+      }
+    }
+  },
+
+  "workspaceFolder": "/workspaces",
+}
