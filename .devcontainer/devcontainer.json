@@ -6,7 +6,7 @@
       "settings": {
         // Hide workspace files to make it seem like a blank working environment
         "files.exclude": {
-          "**/.git": false,
+          "**/.git": true,
           "**/.codespaces": true,
           "**/getting-started-with-git": true
         },
