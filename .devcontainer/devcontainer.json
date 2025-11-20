@@ -15,10 +15,7 @@
         "scm.graph.showIncomingChanges": true,
         "scm.graph.showOutgoingChanges": true,
         "scm.defaultViewMode": "tree",
-        "scm.graph.badges": "all",
-
-        // Automatically show panel for terminal
-        "workbench.panel.opensMaximized": "always"
+        "scm.graph.badges": "all"
       }
     }
   },
