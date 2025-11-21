@@ -15,4 +15,7 @@ echo "Exercise Monitor: Enabled event: post-merge"
 # Add support for running monitors in the background using tmux and inotifyd
 sudo apk add tmux
 
+# Trigger codespace created event
+/home/vscode/.vscode-remote/data/Machine/exercise-monitor/codespace-created.sh
+
 echo "Exercise Monitor: Installation finished"

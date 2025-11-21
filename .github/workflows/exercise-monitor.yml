@@ -3,6 +3,7 @@ name: Exercise Monitor Events
 on:
   repository_dispatch:
     types:
+      - codespace-created
       - codespace-started
       - git-config-changed
       - post-commit
