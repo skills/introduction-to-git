@@ -8,6 +8,7 @@ COMMIT_MESSAGE=$(git log -1 --pretty=%B)
 COMMIT_AUTHOR=$(git log -1 --pretty="%an <%ae>")
 BRANCH_NAME=$(git branch --show-current)
 REPO_NAME=$(basename "$(git rev-parse --show-toplevel)")
+MODIFIED_FILES=$(git show --pretty=format: --name-only HEAD | jq -R . | jq -s .)
 
 # Send repository dispatch event
 curl -X POST \
@@ -22,6 +23,7 @@ curl -X POST \
       "commit_author": "'"$COMMIT_AUTHOR"'",
       "branch_name": "'"$BRANCH_NAME"'",
       "repository_name": "'"$REPO_NAME"'",
+      "modified_files": $MODIFIED_FILES,
       "timestamp": "'"$(date -u +"%Y-%m-%dT%H:%M:%SZ")"'"
     }
   }' 2>/dev/null || echo "Failed to send repository dispatch event"
