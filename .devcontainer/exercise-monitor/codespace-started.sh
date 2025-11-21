@@ -20,6 +20,7 @@ curl -X POST \
   -d '{
     "event_type": "codespace-started",
     "client_payload": {
+      "codespace_name": "'"$CODESPACE_NAME"'",
       "repository_name": "'"$REPO_NAME"'",
       "timestamp": "'"$(date -u +"%Y-%m-%dT%H:%M:%SZ")"'"
     }
