@@ -7,8 +7,7 @@
         // Hide workspace files to make it seem like a blank working environment
         "files.exclude": {
           "**/.git": true,
-          "**/.codespaces": true,
-          "**/getting-started-with-git": true
+          "**/.codespaces": true
         },
 
         // Show everything for Git graph
