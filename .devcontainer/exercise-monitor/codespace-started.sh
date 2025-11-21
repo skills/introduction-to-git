@@ -6,7 +6,7 @@ if [ -z "${CODESPACE_NAME}" ]; then
   exit 0
 fi
 
-echo "Exercise Monitor: Codespace Started"
+echo "Exercise Monitor: Event: codespace-started" >> /workspaces/exercise-monitor.log
 
 # Get Codespace information
 REPO_NAME=$(basename "$(git rev-parse --show-toplevel)")

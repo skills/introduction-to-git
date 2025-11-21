@@ -24,5 +24,6 @@
 
   "workspaceFolder": "/workspaces",
 
-  "postCreateCommand": "./${RepositoryName}/.devcontainer/post-create.sh"
+  "postCreateCommand": "./${RepositoryName}/.devcontainer/post-create.sh",
+  "postStartCommand": "./${RepositoryName}/.devcontainer/post-start.sh"
 }
