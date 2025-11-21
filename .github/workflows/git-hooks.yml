@@ -1,0 +1,19 @@
+name: Example - Triggered from Git Hooks
+
+on:
+  repository_dispatch:
+    types:
+      - post-commit
+      - post-checkout
+      - post-merge
+
+jobs:
+  show-event-payload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show event payload
+        run: |
+          echo "Event type: ${{ github.event.action }}"
+          echo "Event payload:"
+          echo '${{ toJson(github.event.client_payload) }}' | jq '.'
