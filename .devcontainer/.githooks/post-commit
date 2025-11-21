@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "Git Hook: Post Commit"
