@@ -1,0 +1,1 @@
+echo "Exercise Monitor: Git Config Changed"

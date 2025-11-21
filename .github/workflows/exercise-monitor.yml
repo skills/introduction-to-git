@@ -1,8 +1,10 @@
-name: Example - Triggered from Git Hooks
+name: Exercise Monitor Events
 
 on:
   repository_dispatch:
     types:
+      - codespace-started
+      - git-config-changed
       - post-commit
       - post-checkout
       - post-merge
