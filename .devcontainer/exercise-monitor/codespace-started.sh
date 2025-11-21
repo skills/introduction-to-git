@@ -9,7 +9,6 @@ fi
 echo "Exercise Monitor: Event: codespace-started" >> /workspaces/exercise-monitor.log
 
 # Get Codespace information
-REPO_NAME=$(basename "$(git rev-parse --show-toplevel)")
 CODESPACE_NAME="${CODESPACE_NAME}"
 
 # Send repository dispatch event
@@ -21,7 +20,6 @@ curl -X POST \
     "event_type": "codespace-started",
     "client_payload": {
       "codespace_name": "'"$CODESPACE_NAME"'",
-      "repository_name": "'"$REPO_NAME"'",
       "timestamp": "'"$(date -u +"%Y-%m-%dT%H:%M:%SZ")"'"
     }
   }' 2>/dev/null || echo "Failed to send repository dispatch event"
