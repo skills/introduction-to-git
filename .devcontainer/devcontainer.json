@@ -10,6 +10,9 @@
           "**/.codespaces": true
         },
 
+        // Don't show notification when devcontainer.json is removed
+        "github.codespaces.devcontainerChangedNotificationStyle": "none",
+
         // Show everything for Git graph
         "scm.graph.showIncomingChanges": true,
         "scm.graph.showOutgoingChanges": true,
