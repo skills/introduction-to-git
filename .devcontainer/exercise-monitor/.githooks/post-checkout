@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "Git Hook: Post Checkout"
+
+# Get checkout information
+PREVIOUS_HEAD=$1
+NEW_HEAD=$2
+BRANCH_NAME=$(git branch --show-current)
+REPO_NAME=$(basename "$(git rev-parse --show-toplevel)")
+
+# Send repository dispatch event
+curl -X POST \
+  -H "Accept: application/vnd.github.v3+json" \
+  -H "Authorization: token ${GITHUB_TOKEN}" \
+  "https://api.github.com/repos/${GITHUB_REPOSITORY}/dispatches" \
+  -d '{
+    "event_type": "post-checkout",
+    "client_payload": {
+      "previous_head": "'"$PREVIOUS_HEAD"'",
+      "new_head": "'"$NEW_HEAD"'",
+      "branch_name": "'"$BRANCH_NAME"'",
+      "repository_name": "'"$REPO_NAME"'",
+      "timestamp": "'"$(date -u +"%Y-%m-%dT%H:%M:%SZ")"'"
+    }
+  }' 2>/dev/null || echo "Failed to send repository dispatch event"

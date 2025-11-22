@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo "Git Hook: Post Merge"
+
+# Get merge information
+CURRENT_HEAD=$(git rev-parse HEAD)
+BRANCH_NAME=$(git branch --show-current)
+LAST_COMMIT_MESSAGE=$(git log -1 --pretty=%B)
+MERGE_AUTHOR=$(git log -1 --pretty="%an <%ae>")
+REPO_NAME=$(basename "$(git rev-parse --show-toplevel)")
+
+# Send repository dispatch event
+curl -X POST \
+  -H "Accept: application/vnd.github.v3+json" \
+  -H "Authorization: token ${GITHUB_TOKEN}" \
+  "https://api.github.com/repos/${GITHUB_REPOSITORY}/dispatches" \
+  -d '{
+    "event_type": "post-merge",
+    "client_payload": {
+      "current_head": "'"$CURRENT_HEAD"'",
+      "branch_name": "'"$BRANCH_NAME"'",
+      "last_commit_message": "'"$LAST_COMMIT_MESSAGE"'",
+      "merge_author": "'"$MERGE_AUTHOR"'",
+      "repository_name": "'"$REPO_NAME"'",
+      "timestamp": "'"$(date -u +"%Y-%m-%dT%H:%M:%SZ")"'"
+    }
+  }' 2>/dev/null || echo "Failed to send repository dispatch event"

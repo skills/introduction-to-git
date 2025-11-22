@@ -1,0 +1,31 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:alpine-3.20",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        // Hide workspace files to make it seem like a blank working environment
+        "files.exclude": {
+          "**/.git": true,
+          "**/.codespaces": true,
+          "**/exercise-monitor.log": true,
+          "**/*getting-started-with-git": true
+        },
+
+        // Don't show notification when devcontainer.json is removed
+        "github.codespaces.devcontainerChangedNotificationStyle": "none",
+
+        // Show everything for Git graph
+        "scm.graph.showIncomingChanges": true,
+        "scm.graph.showOutgoingChanges": true,
+        "scm.defaultViewMode": "tree",
+        "scm.graph.badges": "all"
+      }
+    }
+  },
+
+  "workspaceFolder": "/workspaces",
+
+  "postCreateCommand": "./${RepositoryName}/.devcontainer/post-create.sh",
+  "postStartCommand": "./${RepositoryName}/.devcontainer/post-start.sh"
+}
