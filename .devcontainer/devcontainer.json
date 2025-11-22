@@ -8,7 +8,8 @@
         "files.exclude": {
           "**/.git": true,
           "**/.codespaces": true,
-          "**/exercise-monitor.log": true
+          "**/exercise-monitor.log": true,
+          "**/*getting-started-with-git": true
         },
 
         // Don't show notification when devcontainer.json is removed
