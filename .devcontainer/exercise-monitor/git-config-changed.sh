@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Exercise Monitor: Event: git-config-changed" >> /workspaces/exercise-monitor.log
+# Get config type from argument
+CONFIG_TYPE=$1
 
-# Get repository information
-REPO_NAME=$(basename "$(git rev-parse --show-toplevel)")
+echo "Exercise Monitor: Event: git-config-changed ($CONFIG_TYPE)" >> /workspaces/exercise-monitor.log
 
 # Send repository dispatch event
 curl -X POST \
@@ -13,8 +13,7 @@ curl -X POST \
   -d '{
     "event_type": "git-config-changed",
     "client_payload": {
-      "repository_name": "'"$REPO_NAME"'",
+      "config_type": "'"$CONFIG_TYPE"'",
       "timestamp": "'"$(date -u +"%Y-%m-%dT%H:%M:%SZ")"'"
     }
   }' 2>/dev/null || echo "Failed to send repository dispatch event"
-
