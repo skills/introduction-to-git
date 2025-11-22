@@ -7,7 +7,8 @@
         // Hide workspace files to make it seem like a blank working environment
         "files.exclude": {
           "**/.git": true,
-          "**/.codespaces": true
+          "**/.codespaces": true,
+          "**/exercise-monitor.log": true
         },
 
         // Don't show notification when devcontainer.json is removed
