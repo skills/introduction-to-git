@@ -55,7 +55,7 @@ For example, the community has streamlined Git into nearly all development workf
   - Git Butler
   - And many more: https://git-scm.com/tools/guis
 
-### ⌨️ Activity: Open the Sample Development Environment
+### ⌨️ Activity: Open the sample project
 
 To start practicing Git, let's first open a pre-configured development environment and explore the sample project.
 
@@ -73,16 +73,22 @@ To start practicing Git, let's first open a pre-configured development environme
 
 1. Wait a moment for Visual Studio Code to load in your browser.
 
-1. In the File Explorer, right-click on `src/main.html` and select **Show Preview** to see our sample game in action.
+1. In the left navigation tabs, select **File Explorer** to show the files. Right-click on `src/main.html` and select **Show Preview** to see our sample game in action.
 
    > ❗️ **Warning**: Don't make any changes!
    > We have not added version control yet! 😱
+
+   <img width="400px" src="1-1.png"/>
+
+   <img width="500px" src="1-2.png"/>
 
 ### ⌨️ Activity 2: Git in the CLI
 
 Let's start with using Git in the command line interface (CLI). This is the source of all Git functionality and most powerful option.
 
-1. Open the integrated terminal in VS Code using `Ctrl+Shift+P` then `View: Toggle Terminal`
+1. If the integrated terminal is not already available, open it using `Ctrl+Shift+P` then searching for and selecting `View: Toggle Terminal`
+
+   <img width="500px" src="1-3.png"/>
 
 1. Show the currently installed version of Git, to verify it is installed.
 
@@ -90,36 +96,30 @@ Let's start with using Git in the command line interface (CLI). This is the sour
    git --version
    ```
 
+   <img width="500px" src="1-4.png"/>
+
 1. Show the Git help documentation.
 
    ```bash
    git --help
    ```
 
-### ⌨️ Activity 3: Git in VS Code
+   <img width="500px" src="1-5.png"/>
 
-In parallel, Let's also explore the integrated Git features of our code editor (Visual Studio Code).
+### ⌨️ Activity 3: Set your Git identity
 
-1. In the left navigation, select the **Source Control** tab.
+Before we can start versioning with Git, let's tell Git about our identity so it can associate you as the author of any changes.
 
-1. Notice the empty **Changes** panel and **Graph** Panel. We will learn more about these in next steps.
-
-### ⌨️ Activity 4: Configure Your Git Identity
-
-Before we can start versioning with Git, let's tell Git our identity so Git can associate you as the author of future changes.
-
-1. In VSCode, switch to the integrated terminal.
-
-1. Set your display name.
+1. Set your display name. Don't forget to replace `First` and `Last`!
 
    ```bash
-   git config --global user.name "Your Name"
+   git config --global user.name "First Last"
    ```
 
-1. Set your email address.
+1. Set your email address. Don't forget to replace `me@example.com`!
 
    ```bash
-   git config --global user.email "your.email@example.com"
+   git config --global user.email "me@example.com"
    ```
 
 1. Confirm the changes by viewing the configuration.
@@ -128,12 +128,14 @@ Before we can start versioning with Git, let's tell Git our identity so Git can 
    git config --global --list
    ```
 
+   <img width="500px" src="1-6.png"/>
+
 > [!TIP]
-> You can also change your username and email per project, if you have multiple accounts. On an existing project, just use `--local` instead of `--global`.
+> You can also change your username and email per project, if you have multiple accounts. On an **existing** project, use `--local` instead of `--global`.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- Make sure you replace "Your Name" and "your.email@example.com" with your actual information.
+- Make sure you replace "First Last" and "me@example.com" with your actual information.
 
 </details>
