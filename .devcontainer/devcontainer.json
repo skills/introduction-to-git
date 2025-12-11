@@ -3,6 +3,7 @@
 
   "customizations": {
     "vscode": {
+      "extensions": ["ms-vscode.live-server"],
       "settings": {
         // Hide workspace files to make it seem like a blank working environment
         "files.exclude": {
