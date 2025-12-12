@@ -94,7 +94,7 @@ Let's add version control to our game and commit the current version.
 
    <img width="500px" src="2-4.png"/>
 
-### ⌨️ Activity 2: Start tracking a file (using VS Code)
+### ⌨️ Activity 2: Work on a file (using VS Code)
 
 Let's also try adding files with our code editor, in this case the documentation for our game.
 
@@ -118,7 +118,7 @@ Let's also try adding files with our code editor, in this case the documentation
 
    <img width="350px" src="2-6.png"/>
 
-1. Stage the file by by hovering over file and selecting the plus sign `+` button.
+1. Stage the file by hovering over file and selecting the plus sign `+` button.
 
    <img width="350px" src="2-7.png"/>
 
@@ -129,6 +129,25 @@ Let's also try adding files with our code editor, in this case the documentation
    ```
 
    <img width="350px" src="2-8.png"/>
+
+1. For a second commit, add the following content.
+
+   ```md
+   ## How to Develop
+
+   - `main.html` - the game container for playing
+   - `style.css` - the game formatting and styling
+   - `main.js` - the primary game logic
+   - `patterns.js` - the error patterns to match during gameplay
+   ```
+
+1. Promote the file change to **Staged Changes** then enter a commit message and press the **Commit** button.
+
+   ```txt
+   Start developer docs
+   ```
+
+   <img width="350px" src="2-9.png"/>
 
 ### ⌨️ Activity 3: (Optional) Ignore files from version control
 
