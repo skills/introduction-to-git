@@ -78,7 +78,7 @@ To start practicing Git, let's first open a pre-configured development environme
    > ❗️ **Warning**: Don't make any changes!
    > We have not added version control yet! 😱
 
-   <img width="400px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-1.png"/>
+   <img width="400px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-1.png"/><br/>
 
    <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-2.png"/>
 

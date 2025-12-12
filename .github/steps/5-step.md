@@ -245,7 +245,7 @@ Let's start a branch and practice committing changes to it.
 
 1. In the left navigation, open the **Source Control panel**. To the right of the project name, click on the branch name `main`. A menu will appear with options.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-6.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-6.png"/><br/>
 
    <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-7.png"/>
 
@@ -321,15 +321,15 @@ Let's start a branch and practice committing changes to it.
 
 1. To prepare for merging, click the branch name again and select the `main` branch.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-10.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-10.png"/><br/>
 
    <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-11.png"/>
 
 1. Click the three dot menu (`...`), then `Branch`, and select `Merge...`. Notice it performed a normal **Fast Forward** style merge.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-12.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-12.png"/><br/>
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-13.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-13.png"/><br/>
 
    <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-14.png"/>
 

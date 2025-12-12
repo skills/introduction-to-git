@@ -109,7 +109,7 @@ The `git diff` command shows differences between development states.
 
 1. Open the **Source Control** tab. In the **Changes** list, double-click the `patterns.js` file to open the Diff (comparison) view.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-5.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-5.png"/><br/>
 
    <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-6.png"/>
 
@@ -125,7 +125,7 @@ The `git diff` command shows differences between development states.
 
    Notice that you can't make changes now. The staging area is locked in preparation for committing.
 
-   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-8.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-8.png"/><br/>
 
    <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-9.png"/>
 
