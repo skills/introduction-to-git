@@ -13,6 +13,11 @@
           "**/*getting-started-with-git": true
         },
 
+        // Hide publish button
+        "git.showActionButton": {
+          "publish": false
+        },
+
         // Don't show notification when devcontainer.json is removed
         "github.codespaces.devcontainerChangedNotificationStyle": "none",
 
