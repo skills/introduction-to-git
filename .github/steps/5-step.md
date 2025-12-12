@@ -16,21 +16,16 @@ Key Concepts:
 
 ### How do you combine branches?
 
-There are multiple strategies for organizing commits. Usually, all in the name of different styles of organization, transparency, and traceability.
+There are multiple strategies for organizing commits. Usually, all in the name of different styles of organization, transparency, and traceability. Let's introduce the most common.
 
-**Fast-forward Merge**: Move the new commits from the feature branch onto the parent branch.
+**Fast-forward merge**: Move the new commits from the child branch onto the parent branch.
 
-<table>
-<tr>
-<td>Before: Original</td>
-<td>After: Fast Forward Merge</td>
-</tr>
+<div align="center">
 
-<tr>
-<td>
+**Before:** Original
 
 ```mermaid
-gitGraph TB:
+gitGraph LR:
    commit id: "A"
    commit id: "B"
    branch feature
@@ -38,47 +33,39 @@ gitGraph TB:
    commit id: "D"
 ```
 
-</td>
-<td>
+**After:** Fast Forward Merge
 
 ```mermaid
-gitGraph TB:
+gitGraph LR:
    commit id: "A"
    commit id: "B"
    commit id: "C"
    commit id: "D"
 ```
 
-</td>
-</tr>
-</table>
+</div>
 
 **Merge commit**: Apply the changes as a single new commit on the parent branch. Leave the child branch in the network for traceability.
 
-<table>
-<tr>
-<td>Before: Original</td>
-<td>After: Merge Commit</td>
-</tr>
+<div align="center">
 
-<tr>
-<td>
+**Before:** Original
 
 ```mermaid
 
-gitGraph TB:
+gitGraph LR:
    commit id: "A"
    commit id: "B"
    branch feature
    commit id: "C"
    commit id: "D"
+   checkout main
 ```
 
-</td>
-<td>
+**After:** Merge Commit
 
 ```mermaid
-gitGraph TB:
+gitGraph LR:
 
    commit id: "A"
    commit id: "B"
@@ -89,23 +76,16 @@ gitGraph TB:
    merge feature id: "E"
 ```
 
-</td>
-</tr>
-</table>
+</div>
 
-- **Squash merge**: Collapse the commits from one branch into a single new commit on the other branch.
+**Squash merge**: Collapse the commits from one branch into a single new commit on the other branch.
 
-<table>
-<tr>
-<td>Before: Original</td>
-<td>After: Squash Commit</td>
-</tr>
+<div align="center">
 
-<tr>
-<td>
+**Before:** Original
 
 ```mermaid
-gitGraph TB:
+gitGraph LR:
    commit id: "A"
    commit id: "B"
    branch feature
@@ -113,19 +93,16 @@ gitGraph TB:
    commit id: "D"
 ```
 
-</td>
-<td>
+**After:** Squash Commit
 
 ```mermaid
-gitGraph TB:
+gitGraph LR:
    commit id: "A"
    commit id: "B"
    commit id: "C+D"
 ```
 
-</td>
-</tr>
-</table>
+</div>
 
 ### What are the important Git commands?
 
