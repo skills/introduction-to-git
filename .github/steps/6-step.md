@@ -14,20 +14,20 @@ At the beginning, we mentioned Git is a "distributed" version control system, th
 
 Here is a typical workflow.
 
-1. Copy a repository to your local machine.
+1. Copy a repository to your local machine (called **cloning**.)
 1. Create branches and develop new features.
-1. Publish your changes to a remote repository, somewhere others can also access.
-1. Other developers decide if they like your changes. If so, they merge them into their version of the project.
-   - Additionally, you may proactively ask another developer to integrate your changes into their copy. This is commonly called a "Pull Request" or "Merge Request".
+1. Publish your changes to a remote repository, somewhere others can also access (called **pushing**.)
+1. Other developers decide if they like your changes. If so, they merge them into their version of the project (called **pulling**.)
+1. Additionally, you might proactively ask another developer to integrate your changes into their copy (called a **pull request**).
 
----
+### ⌨️ Activity: Quick Review
 
-Answer this quick question for Mona, and she will provide the final review! You are all done! 🎉
+Answer one quick question, and you are all done! 🎉
 
 **What is your favorite feature of Git?**
 
-- [ ] It's free and open source.
-- [ ] I don't need the internet to use it.
-- [ ] I can use it from any operating system.
-- [ ] The detailed history (if I write good messages).
-- [ ] That I might never write `final_really.zip` ever again!
+- [ ] It's free and open source. 😍
+- [ ] I don't need internet to use it. 🛜
+- [ ] I can use it with any operating system. 🍎🪟🐧
+- [ ] The detailed history (if I write good messages). ✨
+- [ ] That I might never write `final_really.zip` ever again! 😎
