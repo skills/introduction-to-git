@@ -142,7 +142,7 @@ Let's start a branch and practice committing changes to it.
    git log --all --graph --oneline
    ```
 
-   <img width="500px" src="5-1.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-1.png"/>
 
 1. Create a new branch and switch to it.
 
@@ -157,7 +157,7 @@ Let's start a branch and practice committing changes to it.
    git branch --list
    ```
 
-   <img width="500px" src="5-2.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-2.png"/>
 
 1. Open `main.js` so we can fix the high score feature.
 
@@ -207,7 +207,7 @@ Let's start a branch and practice committing changes to it.
    git log --all --graph --oneline
    ```
 
-   <img width="500px" src="5-3.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-3.png"/>
 
 1. Switch back to the `main` branch.
 
@@ -221,7 +221,7 @@ Let's start a branch and practice committing changes to it.
    git merge --no-ff fix-incomplete-high-score -m "Fix high score tracker"
    ```
 
-   <img width="500px" src="5-4.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-4.png"/>
 
    For learning, we use the "not fast forward" option so the branch stays visible in the history. It will make our next history more interesting to explore.
 
@@ -231,7 +231,7 @@ Let's start a branch and practice committing changes to it.
    git log --all --graph --oneline
    ```
 
-   <img width="500px" src="5-5.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-5.png"/>
 
 1. Remove the pointer/label to the feature branch, since it is now merged and no longer needed.
 
@@ -245,9 +245,9 @@ Let's start a branch and practice committing changes to it.
 
 1. In the left navigation, open the **Source Control panel**. To the right of the project name, click on the branch name `main`. A menu will appear with options.
 
-   <img width="350px" src="5-6.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-6.png"/>
 
-   <img width="350px" src="5-7.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-7.png"/>
 
 1. Make sure the **Graph** panel is visible. Let's watch it update as we apply changes.
 
@@ -258,7 +258,7 @@ Let's start a branch and practice committing changes to it.
    git checkout add-level-counter
    ```
 
-   <img width="350px" src="5-8.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-8.png"/>
 
 1. Open `main.html`. On `line 21`, insert a new element for showing the current level, then commit the change.
 
@@ -317,21 +317,21 @@ Let's start a branch and practice committing changes to it.
 
 1. Notice the **Graph** panel shows the history, previous branch, and new commits.
 
-   <img width="350px" src="5-9.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-9.png"/>
 
 1. To prepare for merging, click the branch name again and select the `main` branch.
 
-   <img width="350px" src="5-10.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-10.png"/>
 
-   <img width="350px" src="5-11.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-11.png"/>
 
 1. Click the three dot menu (`...`), then `Branch`, and select `Merge...`. Notice it performed a normal **Fast Forward** style merge.
 
-   <img width="350px" src="5-12.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-12.png"/>
 
-   <img width="350px" src="5-13.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-13.png"/>
 
-   <img width="350px" src="5-14.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-14.png"/>
 
 1. Remove the pointer/label to the feature branch, since it is no longer needed.
 

@@ -53,7 +53,7 @@ Let's add version control to our game and commit the current version.
    git status
    ```
 
-   <img width="500px" src="2-1.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/2-1.png"/>
 
 1. Put the game files in the staging area to prepare them for committing to the repository history.
 
@@ -76,7 +76,7 @@ Let's add version control to our game and commit the current version.
    git status
    ```
 
-   <img width="500px" src="2-2.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/2-2.png"/>
 
 1. Commit the changes to the repository history. Our project history is now started! :octocat:
 
@@ -92,7 +92,7 @@ Let's add version control to our game and commit the current version.
    git status
    ```
 
-   <img width="500px" src="2-4.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/2-4.png"/>
 
 ### ⌨️ Activity 2: Work on a file (using VS Code)
 
@@ -104,7 +104,7 @@ Let's also try adding files with our code editor, in this case the documentation
    README.md
    ```
 
-   <img width="350px" src="2-5.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/2-5.png"/>
 
 1. Open the file and insert the following content.
 
@@ -116,11 +116,11 @@ Let's also try adding files with our code editor, in this case the documentation
 
 1. In the left navigation, select the **Source Control** tab. Notice the `README.md` file is listed under the **Changes** area.
 
-   <img width="350px" src="2-6.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/2-6.png"/>
 
 1. Stage the file by hovering over file and selecting the plus sign `+` button.
 
-   <img width="350px" src="2-7.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/2-7.png"/>
 
 1. Enter a commit message and press the **Commit** button.
 
@@ -128,7 +128,7 @@ Let's also try adding files with our code editor, in this case the documentation
    Start game documentation
    ```
 
-   <img width="350px" src="2-8.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/2-8.png"/>
 
 1. For a second commit, add the following content.
 
@@ -147,7 +147,7 @@ Let's also try adding files with our code editor, in this case the documentation
    Start developer docs
    ```
 
-   <img width="350px" src="2-9.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/2-9.png"/>
 
 ### ⌨️ Activity 3: (Optional) Ignore files from version control
 

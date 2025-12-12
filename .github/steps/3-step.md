@@ -42,7 +42,7 @@ Here are a few of the common commands and options you will use often.
    git log
    ```
 
-   <img width="500px" src="3-1.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/3-1.png"/>
 
 1. Show one commit per line.
 
@@ -50,7 +50,7 @@ Here are a few of the common commands and options you will use often.
    git log --oneline
    ```
 
-   <img width="500px" src="3-2.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/3-2.png"/>
 
 1. Show a visual graph of the full commit history.
 
@@ -68,9 +68,9 @@ Here are a few of the common commands and options you will use often.
    git checkout <commit id>
    ```
 
-   <img width="500px" src="3-3.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/3-3.png"/>
 
-   <img width="350px" src="3-4.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/3-4.png"/>
 
 1. Return to the newest commit. Notice the `README.md` file has returned. 🧐
 
@@ -78,19 +78,19 @@ Here are a few of the common commands and options you will use often.
    git checkout -
    ```
 
-   <img width="350px" src="3-5.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/3-5.png"/>
 
-   <img width="350px" src="3-6.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/3-6.png"/>
 
 ### ⌨️ Activity 2: Explore the history (using VS Code)
 
 1. In the left navigation, open the **Source Control** tab and expand the **Graph** panel. Notice the timeline list of your recent commits.
 
-   <img width="350px" src="3-7.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/3-7.png"/>
 
 1. Click the commit names to expand a list of the files modified by that commit.
 
-   <img width="350px" src="3-8.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/3-8.png"/>
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>

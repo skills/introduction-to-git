@@ -78,9 +78,9 @@ To start practicing Git, let's first open a pre-configured development environme
    > ❗️ **Warning**: Don't make any changes!
    > We have not added version control yet! 😱
 
-   <img width="400px" src="1-1.png"/>
+   <img width="400px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-1.png"/>
 
-   <img width="500px" src="1-2.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-2.png"/>
 
 ### ⌨️ Activity 2: Git in the CLI
 
@@ -88,7 +88,7 @@ Let's start with using Git in the command line interface (CLI). This is the sour
 
 1. If the integrated terminal is not already available, open it using `Ctrl+Shift+P` then searching for and selecting `View: Toggle Terminal`
 
-   <img width="500px" src="1-3.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-3.png"/>
 
 1. Show the currently installed version of Git, to verify it is installed.
 
@@ -96,7 +96,7 @@ Let's start with using Git in the command line interface (CLI). This is the sour
    git --version
    ```
 
-   <img width="500px" src="1-4.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-4.png"/>
 
 1. Show the Git help documentation.
 
@@ -104,7 +104,7 @@ Let's start with using Git in the command line interface (CLI). This is the sour
    git --help
    ```
 
-   <img width="500px" src="1-5.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-5.png"/>
 
 ### ⌨️ Activity 3: Set your Git identity
 
@@ -128,7 +128,7 @@ Before we can start versioning with Git, let's tell Git about our identity so it
    git config --global --list
    ```
 
-   <img width="500px" src="1-6.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/1-6.png"/>
 
 > [!TIP]
 > You can also change your username and email per project, if you have multiple accounts. On an **existing** project, use `--local` instead of `--global`.

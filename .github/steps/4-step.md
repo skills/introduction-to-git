@@ -54,7 +54,7 @@ The `git diff` command shows differences between development states.
    git diff src/main.html
    ```
 
-   <img width="500px" src="4-1.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-1.png"/>
 
 1. Promote the changes into the staging area.
 
@@ -74,7 +74,7 @@ The `git diff` command shows differences between development states.
    git diff --staged src/main.html
    ```
 
-   <img width="500px" src="4-2.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-2.png"/>
 
 1. Commit the changes with the following message.
 
@@ -82,7 +82,7 @@ The `git diff` command shows differences between development states.
    git commit -m "Add element for showing high score"
    ```
 
-   <img width="500px" src="4-3.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-3.png"/>
 
 ### ⌨️ Activity 2: View differences (using VS Code)
 
@@ -105,13 +105,13 @@ The `git diff` command shows differences between development states.
 
 1. In the left file explorer, notice file name changed color and now has an `M` indicating it is modified.
 
-   <img width="350px" src="4-4.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-4.png"/>
 
 1. Open the **Source Control** tab. In the **Changes** list, double-click the `patterns.js` file to open the Diff (comparison) view.
 
-   <img width="350px" src="4-5.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-5.png"/>
 
-   <img width="500px" src="4-6.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-6.png"/>
 
    > 💡 **Tip**: You can modify the content in the comparison view for live feedback!
 
@@ -119,15 +119,15 @@ The `git diff` command shows differences between development states.
 
    Notice the comparison view stopped showing changes since the current file matches the **Staging** area.
 
-   <img width="500px" src="4-7.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-7.png"/>
 
 1. In the **Staged Changes** list, double-click the `patterns.js` file to open the Diff (comparison) view.
 
    Notice that you can't make changes now. The staging area is locked in preparation for committing.
 
-   <img width="350px" src="4-8.png"/>
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-8.png"/>
 
-   <img width="500px" src="4-9.png"/>
+   <img width="500px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/4-9.png"/>
 
 1. Add the following commit message and press the **Commit** button.
 
