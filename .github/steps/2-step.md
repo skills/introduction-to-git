@@ -83,7 +83,7 @@ Let's add version control to our game and commit the current version.
    ```bash
    git commit -m "Initial commit"
    ```
-   
+
    <img width="500px" src="https://github.com/user-attachments/assets/975f12ba-98d6-4767-bf7a-71ec129f0d70"/>
 
 1. Check repository status. Notice the "working tree clean" which means our current copy perfectly matches the history.
@@ -148,26 +148,6 @@ Let's also try adding files with our code editor, in this case the documentation
    ```
 
    <img width="350px" src="https://github.com/user-attachments/assets/e140ed6a-cb1b-4a2c-980e-53fb4d7ddd74"/>
-
-### ⌨️ Activity 3: (Optional) Ignore files from version control
-
-As your project grows, you will quickly realize you do not want some files tracked. You can tell Git to ignore them with a `.gitignore` file.
-
-This can help prevent accidentally sharing sensitive information like passwords, and help keep the project organized by not saving generated content like analysis results or builds.
-
-1. Create a `.gitignore` file.
-
-   ```bash
-   touch .gitignore
-   ```
-
-1. Add common patterns like `*.log`, `.env`, and `node_modules/`
-
-1. Create a temporary file that matches a gitignore pattern
-
-1. Verify that `git status` doesn't show the ignored file
-
-1. Stage and commit the `.gitignore` file
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
