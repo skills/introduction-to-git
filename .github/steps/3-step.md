@@ -38,8 +38,6 @@ Here are a few of the common commands and options you will use often.
 
 1. Show the detailed commit history.
 
-   🪧 **Note:** The results will be long. Use the up/down keys to scroll and press `q` to exit the preview mode.
-
    ```bash
    git log
    ```
@@ -62,9 +60,9 @@ Here are a few of the common commands and options you will use often.
 
    > 🪧 **Note**: This will look more interesting in a future step when the history is longer.
 
-1. Copy the **Commit ID** of the "Initial commit" entry. Both the long and short form will work.
+1. Copy the **Commit ID** of the `Initial commit` entry. Both the long and short form will work.
 
-1. Use it to checkout the earlier version. Notice the `README.md` file disappeared.
+1. Use it to checkout the earlier version.
 
    ```bash
    git checkout <commit id>
@@ -72,6 +70,7 @@ Here are a few of the common commands and options you will use often.
 
    <img width="500px" src="https://github.com/user-attachments/assets/4d0f6660-e689-47a2-874e-c3d71b32975b"/><br/>
 
+   🪧 Notice the `README.md` file was removed.
    <img width="350px" src="https://github.com/user-attachments/assets/ea61c817-0ac2-430e-b501-d43ea903dae3"/>
 
 1. Return to the newest commit. Notice the `README.md` file has returned. 🧐

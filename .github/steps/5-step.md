@@ -179,14 +179,18 @@ Let's start a branch and practice committing changes to it.
    git commit -m "Add loading of stored high score"
    ```
 
-1. On `line 316` inside the `updateScore` function, insert code to track of the highest score and then commit it.
+1. On `line 313` replace the `updateScore` function so it tracks the highest score, then commit it.
 
    ```js
-   // Update high score if current score exceeds it
-   if (score > highScore) {
-     highScore = score;
-     document.getElementById("high-score").textContent = highScore;
-     localStorage.setItem("stackOverflownHighScore", highScore);
+   function updateScore() {
+     document.getElementById("score").textContent = score;
+
+     // Update high score if current score exceeds it
+     if (score > highScore) {
+       highScore = score;
+       document.getElementById("high-score").textContent = highScore;
+       localStorage.setItem("stackOverflownHighScore", highScore);
+     }
    }
    ```
 
@@ -311,7 +315,7 @@ Let's start a branch and practice committing changes to it.
    Add logic to show next level
    ```
 
-1. Notice the **Graph** panel shows the history, previous branch, and new commits.
+1. Notice the **Graph** panel shows the entire history: the new commits, the previous branch, and also the original commits.
 
    <img width="350px" src="https://github.com/user-attachments/assets/66b8c419-3935-46e8-9905-b6ed4f5de75c"/>
 

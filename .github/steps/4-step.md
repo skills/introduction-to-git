@@ -88,20 +88,22 @@ Let's make some changes to the game then use the CLI to show the differences.
 
 ### ⌨️ Activity 2: View differences (using VS Code)
 
+Let's make some more changes to the game then use the VS Code to show the differences.
+
 1. Open `src/patterns.html`.
 
 1. At `line 4`, replace the `Null Pointer` area with the below example to change the pattern.
 
    ```txt
    {
-    name: "Null Pointer",
-    pattern: [
-      [0, 1, 1, 1, 0],
-      [0, 1, 0, 1, 0],
-      [0, 1, 1, 1, 0],
-      [0, 0, 1, 0, 0],
-      [0, 0, 1, 0, 0],
-    ],
+     name: "Null Pointer",
+     pattern: [
+       [0, 1, 1, 1, 0],
+       [0, 1, 0, 1, 0],
+       [0, 1, 1, 1, 0],
+       [0, 0, 1, 0, 0],
+       [0, 0, 1, 0, 0],
+     ],
    },
    ```
 

@@ -86,7 +86,7 @@ jobs:
           vars: |
             step_number: 4
             results_table:
-              - description: "Created 2 commits"
+              - description: "Create 2 commits"
                 passed: ${{ steps.check-commit-count.outcome == 'success' }}
 
       # END: Check practical exercise
