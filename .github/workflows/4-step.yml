@@ -63,7 +63,7 @@ jobs:
         uses: actions/github-script@v6
         env:
           commit_count: ${{ github.event.client_payload.branch_commit_count }}
-          required_count: 4
+          required_count: 5
         with:
           script: |
             // Load commit count and required count

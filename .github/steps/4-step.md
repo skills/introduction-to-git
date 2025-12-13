@@ -29,9 +29,11 @@ The `git diff` command shows differences between development states.
 
 ### ⌨️ Activity 1: View differences (using the CLI)
 
-1. Open `src/main.html` and navigate to around `line 20`.
+Let's make some changes to the game then use the CLI to show the differences.
 
-1. Replace the `info-section` area about scoring with the below example.
+1. Open `src/main.html`.
+
+1. At `line 20`, replace the `info-section` area about scoring with the below example.
 
    ```txt
    <div class="info-section">
@@ -86,9 +88,9 @@ The `git diff` command shows differences between development states.
 
 ### ⌨️ Activity 2: View differences (using VS Code)
 
-1. Open `src/patterns.html` and navigate to around `line 4`.
+1. Open `src/patterns.html`.
 
-1. Replace the `Null Pointer` area with the below example to change the pattern.
+1. At `line 4`, replace the `Null Pointer` area with the below example to change the pattern.
 
    ```txt
    {
@@ -100,10 +102,10 @@ The `git diff` command shows differences between development states.
       [0, 0, 1, 0, 0],
       [0, 0, 1, 0, 0],
     ],
-   }
+   },
    ```
 
-1. In the left file explorer, notice file name changed color and now has an `M` indicating it is modified.
+1. In the **File Explorer**, notice the file name `patterns.js` changed color and now has an `M` indicating it is modified.
 
    <img width="350px" src="https://github.com/user-attachments/assets/6e06e800-ca72-4fc9-b383-add801e61c06"/>
 
@@ -117,7 +119,7 @@ The `git diff` command shows differences between development states.
 
 1. Promote the the file to the **staging** area. ⚠️ Don't commit yet!
 
-   Notice the comparison view stopped showing changes since the current file matches the **Staging** area.
+   Notice the comparison view stopped showing changes since the current file matches the staging area.
 
    <img width="500px" src="https://github.com/user-attachments/assets/b1274ece-2b03-42d2-88e8-9f3aaaa8f2c5"/>
 
@@ -129,7 +131,7 @@ The `git diff` command shows differences between development states.
 
    <img width="500px" src="https://github.com/user-attachments/assets/de1448eb-d0dd-4ec5-89a2-74fb4aa1cf5f"/>
 
-1. Add the following commit message and press the **Commit** button.
+1. Commit the change with the following message.
 
    ```txt
    Make null pointer pattern easier to complete
