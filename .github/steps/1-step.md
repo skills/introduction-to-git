@@ -111,13 +111,17 @@ Let's start with using Git in the command line interface (CLI). This is the sour
 
 Before we can start versioning our game, let's provide Git our identity so it can associate us as the author for any changes.
 
-1. Set your display name. Don't forget to replace `First` and `Last`!
+1. Set your display name.
+
+   ⚠️ Don't forget to replace `First` and `Last`!
 
    ```bash
    git config --global user.name "First Last"
    ```
 
-1. Set your email address. Don't forget to replace `me@example.com`!
+1. Set your email address.
+
+   ⚠️ Don't forget to replace `me@example.com`!
 
    ```bash
    git config --global user.email "me@example.com"
