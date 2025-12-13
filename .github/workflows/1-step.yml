@@ -13,6 +13,10 @@ permissions:
 env:
   STEP_2_FILE: ".github/steps/2-step.md"
 
+concurrency:
+  group: "step-1"
+  cancel-in-progress: true
+
 jobs:
   find_exercise:
     name: Find Exercise Issue
