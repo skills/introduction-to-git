@@ -126,7 +126,7 @@ gitGraph LR:
 <!-- `git switch --create <branch name>` -->
 <!-- `git switch branch-name` -->
 
-### ⌨️ Activity 1: Develop on a branch (using the CLI)
+### ⌨️ Activity 1: Commit to a branch (using the CLI)
 
 Let's start a branch and practice committing changes to it.
 
@@ -241,7 +241,7 @@ Let's start a branch and practice committing changes to it.
 
    > 🪧 **Note**: This does not delete the branch content, just the name used for referencing it.
 
-### ⌨️ Activity 2: Develop on a branch (using VS Code)
+### ⌨️ Activity 2: Commit to a branch (using VS Code)
 
 1. In the left navigation, open the **Source Control panel**. To the right of the project name, click on the branch name `main`. A menu will appear with options.
 
@@ -281,9 +281,10 @@ Let's start a branch and practice committing changes to it.
    let patternsCleared = 0;
    ```
 
+   Commit Message
+
    ```bash
-   git add src/main.js
-   git commit -m "Add variables for level and clear counter"
+   Add variables for level and clear counter
    ```
 
 1. On `line 273`, replace the `checkPatternMatch` method with the following, then commit the change.
@@ -310,9 +311,10 @@ Let's start a branch and practice committing changes to it.
    }
    ```
 
+   Commit Message
+
    ```bash
-   git add src/main.js
-   git commit -m "Add logic to show next level"
+   Add logic to show next level
    ```
 
 1. Notice the **Graph** panel shows the history, previous branch, and new commits.
