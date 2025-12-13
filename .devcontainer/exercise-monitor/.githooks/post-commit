@@ -10,31 +10,44 @@ BRANCH_NAME=$(git branch --show-current)
 REPO_NAME=$(basename "$(git rev-parse --show-toplevel)")
 MODIFIED_FILES=$(git show --pretty=format: --name-only HEAD | jq -R . | jq -s .)
 
-# Get total commit count on branch, since main/master branch.
-# If neither main nor master exists, base is unclear. Count total length.
-COUNT_QUERY="HEAD"
-if git show-ref --verify --quiet refs/heads/main; then
-  COUNT_QUERY="main..${BRANCH_NAME}"
-elif git show-ref --verify --quiet refs/heads/master; then
-  COUNT_QUERY="master..${BRANCH_NAME}"
+# Get total commit count on branch
+DEFAULT_BRANCH=$(git branch --sort=committerdate --format='%(committerdate:short) %(refname:short)' | head -n 1 | cut -d' ' -f2)
+if [ "$BRANCH_NAME" != "$DEFAULT_BRANCH" ]; then
+  BRANCH_COMMIT_COUNT=$(git rev-list --count ${DEFAULT_BRANCH}..${BRANCH_NAME})
+  # echo "Total commits on branch '${BRANCH_NAME}' since '${DEFAULT_BRANCH}': ${BRANCH_COMMIT_COUNT}"
+else
+  BRANCH_COMMIT_COUNT=$(git rev-list --count HEAD)
+  # echo "Total commits on branch '${DEFAULT_BRANCH}': ${BRANCH_COMMIT_COUNT}"
 fi
-BRANCH_COMMIT_COUNT=$(git rev-list --count ${COUNT_QUERY})
+
+# Build JSON payload
+PAYLOAD=$(jq -n \
+  --arg event_type "post-commit" \
+  --arg commit_hash "$COMMIT_HASH" \
+  --arg commit_message "$COMMIT_MESSAGE" \
+  --arg commit_author "$COMMIT_AUTHOR" \
+  --arg branch_name "$BRANCH_NAME" \
+  --argjson branch_commit_count "$BRANCH_COMMIT_COUNT" \
+  --arg repository_name "$REPO_NAME" \
+  --argjson modified_files "$MODIFIED_FILES" \
+  --arg timestamp "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" \
+  '{
+    "event_type": $event_type,
+    "client_payload": {
+      "commit_hash": $commit_hash,
+      "commit_message": $commit_message,
+      "commit_author": $commit_author,
+      "branch_name": $branch_name,
+      "branch_commit_count": $branch_commit_count,
+      "repository_name": $repository_name,
+      "modified_files": $modified_files,
+      "timestamp": $timestamp
+    }
+  }')
 
 # Send repository dispatch event
 curl -X POST \
   -H "Accept: application/vnd.github.v3+json" \
   -H "Authorization: token ${GITHUB_TOKEN}" \
   "https://api.github.com/repos/${GITHUB_REPOSITORY}/dispatches" \
-  -d '{
-    "event_type": "post-commit",
-    "client_payload": {
-      "commit_hash": "'"$COMMIT_HASH"'",
-      "commit_message": "'"$COMMIT_MESSAGE"'",
-      "commit_author": "'"$COMMIT_AUTHOR"'",
-      "branch_name": "'"$BRANCH_NAME"'",
-      "branch_commit_count": '"$BRANCH_COMMIT_COUNT"',
-      "repository_name": "'"$REPO_NAME"'",
-      "modified_files": $MODIFIED_FILES,
-      "timestamp": "'"$(date -u +"%Y-%m-%dT%H:%M:%SZ")"'"
-    }
-  }' 2>/dev/null || echo "Failed to send repository dispatch event"
+  -d "$PAYLOAD" 2>/dev/null || echo "Failed to send repository dispatch event"
