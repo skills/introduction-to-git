@@ -83,8 +83,8 @@ Let's add version control to our game and commit the current version.
    ```bash
    git commit -m "Initial commit"
    ```
-
-   (pending image)
+   
+   <img width="500px" src="https://github.com/user-attachments/assets/975f12ba-98d6-4767-bf7a-71ec129f0d70"/>
 
 1. Check repository status. Notice the "working tree clean" which means our current copy perfectly matches the history.
 
