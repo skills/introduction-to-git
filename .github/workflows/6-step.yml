@@ -1,7 +1,7 @@
 name: Step 6 # Last step of the exercise
 
 on:
-  issues:
+  issue_comment:
     types:
       - edited
 
