@@ -87,9 +87,9 @@ jobs:
           edit-mode: replace
           file: exercise-toolkit/markdown-templates/step-feedback/step-results-table.md
           vars: |
-            step_number: 2
+            step_number: 3
             results_table:
-              - description: "Checkout out past commit. Returned to latest commit."
+              - description: "Preview a past commit then returned to the latest commit"
                 passed: ${{ steps.check-current-head-location.outcome == 'success' }}
 
       # END: Check practical exercise

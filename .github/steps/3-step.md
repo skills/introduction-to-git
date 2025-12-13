@@ -38,6 +38,8 @@ Here are a few of the common commands and options you will use often.
 
 1. Show the detailed commit history.
 
+   🪧 **Note:** The results will be long. Use the up/down keys to scroll and press `q` to exit the preview mode.
+
    ```bash
    git log
    ```
@@ -58,7 +60,7 @@ Here are a few of the common commands and options you will use often.
    git log --graph --oneline
    ```
 
-   > 🪧 **Note**: This will look more interesting in a future step after the game has more history.
+   > 🪧 **Note**: This will look more interesting in a future step when the history is longer.
 
 1. Copy the **Commit ID** of the "Initial commit" entry. Both the long and short form will work.
 
