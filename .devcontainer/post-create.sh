@@ -2,6 +2,7 @@
 
 # Only use paging if the results are longer than one screen.
 # Do this before installing the exercise monitor
+git config --global pager.log false
 git config --global core.pager "less -FX"
 
 # Install exercise monitor - Do this last to avoid accidental triggers during startup.
