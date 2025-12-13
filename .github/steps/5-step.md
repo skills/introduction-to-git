@@ -335,11 +335,11 @@ Let's start a branch and practice committing changes to it.
 
    <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-14.png"/>
 
-1. Remove the pointer/label to the feature branch, since it is no longer needed.
+1. Click the three dot menu (`...`), then `Branch`, and select `Delete Branch...`.
 
-   ```bash
-   git branch --delete add-level-counter
-   ```
+   <img width="350px" src="https://github.com/skills-dev/getting-started-with-git/blob/ef19134a80efd6e9e177684995a39c7db379635a/.github/steps/images/5-12.png"/><br/>
+
+   <img width="350px" src="images/5-15.png"/>
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
