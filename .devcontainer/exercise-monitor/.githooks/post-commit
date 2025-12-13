@@ -10,6 +10,16 @@ BRANCH_NAME=$(git branch --show-current)
 REPO_NAME=$(basename "$(git rev-parse --show-toplevel)")
 MODIFIED_FILES=$(git show --pretty=format: --name-only HEAD | jq -R . | jq -s .)
 
+# Get total commit count on branch, since main/master branch.
+# If neither main nor master exists, base is unclear. Count total length.
+COUNT_QUERY="HEAD"
+if git show-ref --verify --quiet refs/heads/main; then
+  COUNT_QUERY="main..${BRANCH_NAME}"
+elif git show-ref --verify --quiet refs/heads/master; then
+  COUNT_QUERY="master..${BRANCH_NAME}"
+fi
+BRANCH_COMMIT_COUNT=$(git rev-list --count ${COUNT_QUERY})
+
 # Send repository dispatch event
 curl -X POST \
   -H "Accept: application/vnd.github.v3+json" \
@@ -22,6 +32,7 @@ curl -X POST \
       "commit_message": "'"$COMMIT_MESSAGE"'",
       "commit_author": "'"$COMMIT_AUTHOR"'",
       "branch_name": "'"$BRANCH_NAME"'",
+      "branch_commit_count": '"$BRANCH_COMMIT_COUNT"',
       "repository_name": "'"$REPO_NAME"'",
       "modified_files": $MODIFIED_FILES,
       "timestamp": "'"$(date -u +"%Y-%m-%dT%H:%M:%SZ")"'"
