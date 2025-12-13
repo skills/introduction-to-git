@@ -60,7 +60,8 @@ For example, the community has streamlined Git into nearly all development workf
 To start practicing Git, let's first open a pre-configured development environment and explore the sample project.
 
 > [!IMPORTANT]
-> This exercise teaches Git usage, not Git installation. We recommend the official [Git site](https://git-scm.com) for installation guides.
+> This exercise teaches Git usage, not Git installation.
+> Since there are many computer configurations, we recommend the official [Git site](https://git-scm.com) for installation guides.
 
 1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
 
@@ -69,7 +70,7 @@ To start practicing Git, let's first open a pre-configured development environme
 1. Confirm the **Repository** field is your copy of the exercise, not the original, then click the green **Create Codespace** button.
 
    - ✅ Your copy: `/{{full_repo_name}}`
-   - ❌ Original: `/skills/customize-your-github-copilot-experience`
+   - ❌ Original: `/skills-dev/getting-started-with-git`
 
 1. Wait a moment for Visual Studio Code to load in your browser.
 
@@ -108,7 +109,7 @@ Let's start with using Git in the command line interface (CLI). This is the sour
 
 ### ⌨️ Activity 3: Set your Git identity
 
-Before we can start versioning with Git, let's tell Git about our identity so it can associate you as the author of any changes.
+Before we can start versioning our game, let's provide Git our identity so it can associate us as the author for any changes.
 
 1. Set your display name. Don't forget to replace `First` and `Last`!
 
