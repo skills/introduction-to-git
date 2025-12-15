@@ -14,9 +14,11 @@ MODIFIED_FILES=$(git show --pretty=format: --name-only HEAD | jq -R . | jq -s .)
 DEFAULT_BRANCH=$(git branch --sort=committerdate --format='%(committerdate:short) %(refname:short)' | head -n 1 | cut -d' ' -f2)
 if [ "$BRANCH_NAME" != "$DEFAULT_BRANCH" ]; then
   BRANCH_COMMIT_COUNT=$(git rev-list --count ${DEFAULT_BRANCH}..${BRANCH_NAME})
+  BRANCH_COMMIT_MESSAGES=$(git log ${DEFAULT_BRANCH}..${BRANCH_NAME} --pretty=format:'%h%x1f%s' | jq -R -s -c 'split("\n") | map(select(length > 0)) | map(split("\u001f") | {id: .[0], message: .[1]})')
   # echo "Total commits on branch '${BRANCH_NAME}' since '${DEFAULT_BRANCH}': ${BRANCH_COMMIT_COUNT}"
 else
   BRANCH_COMMIT_COUNT=$(git rev-list --count HEAD)
+  BRANCH_COMMIT_MESSAGES=$(git log --pretty=format:'%h%x1f%s' | jq -R -s -c 'split("\n") | map(select(length > 0)) | map(split("\u001f") | {id: .[0], message: .[1]})')
   # echo "Total commits on branch '${DEFAULT_BRANCH}': ${BRANCH_COMMIT_COUNT}"
 fi
 
@@ -28,6 +30,7 @@ PAYLOAD=$(jq -n \
   --arg commit_author "$COMMIT_AUTHOR" \
   --arg branch_name "$BRANCH_NAME" \
   --argjson branch_commit_count "$BRANCH_COMMIT_COUNT" \
+  --argjson branch_commit_messages "$BRANCH_COMMIT_MESSAGES" \
   --arg repository_name "$REPO_NAME" \
   --argjson modified_files "$MODIFIED_FILES" \
   --arg timestamp "$(date -u +"%Y-%m-%dT%H:%M:%SZ")" \
@@ -39,6 +42,7 @@ PAYLOAD=$(jq -n \
       "commit_author": $commit_author,
       "branch_name": $branch_name,
       "branch_commit_count": $branch_commit_count,
+      "branch_commit_messages": $branch_commit_messages,
       "repository_name": $repository_name,
       "modified_files": $modified_files,
       "timestamp": $timestamp

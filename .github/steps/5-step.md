@@ -312,7 +312,7 @@ Let's start a branch and practice committing changes to it.
    Commit Message
 
    ```bash
-   Add logic to show next level
+   Add logic to calculate level
    ```
 
 1. Notice the **Graph** panel shows the entire history: the new commits, the previous branch, and also the original commits.

@@ -26,6 +26,9 @@ jobs:
       ISSUE_REPOSITORY: ${{ github.repository }}
       ISSUE_NUMBER: ${{ needs.find_exercise.outputs.issue-number }}
 
+    # Don't check unless at least 3 commits have been made
+    if: ${{ github.event.client_payload.branch_commit_count >= 3 }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -56,23 +59,74 @@ jobs:
 
       # START: Check practical exercise
 
-      - name: Check for at least 3 new commits
-        id: check-commit-count
+      - name: Check for initial commit
+        id: check-for-initial-commit
         continue-on-error: true
         uses: actions/github-script@v6
         env:
-          commit_count: ${{ github.event.client_payload.branch_commit_count }}
-          required_count: 3
+          commit_messages: ${{ toJson(github.event.client_payload.branch_commit_messages) }}
+          keyword: "initial"
         with:
           script: |
-            // Load commit count and required count
-            const commitCount = parseInt(process.env.commit_count || "0", 10);
-            const requiredCount = parseInt(process.env.required_count || "0", 10);
+            // Load commit messages and keyword
+            const commitMessages = JSON.parse(process.env.commit_messages || "[]");
+            let keyword = process.env.keyword || "";
+            keyword = keyword.toLowerCase();
 
-            // Fail the workflow if the commit count is less than required.
-            if (commitCount < requiredCount) {
-              throw new Error(`Commit count ${commitCount} is less than required ${requiredCount}`);
+            // Check commit messages for keyword
+            for (const commit of commitMessages) {
+              const message = commit.message.toLowerCase();
+              if (message.includes(keyword)) {
+                return;
+              }
             }
+            throw new Error(`No commit message contains the keyword '${keyword}'`);
+
+      - name: Check for game docs commit
+        id: check-for-game-docs-commit
+        continue-on-error: true
+        uses: actions/github-script@v6
+        env:
+          commit_messages: ${{ toJson(github.event.client_payload.branch_commit_messages) }}
+          keyword: "game"
+        with:
+          script: |
+            // Load commit messages and keyword
+            const commitMessages = JSON.parse(process.env.commit_messages || "[]");
+            let keyword = process.env.keyword || "";
+            keyword = keyword.toLowerCase();
+
+            // Check commit messages for keyword
+            for (const commit of commitMessages) {
+              const message = commit.message.toLowerCase();
+              if (message.includes(keyword)) {
+                return;
+              }
+            }
+            throw new Error(`No commit message contains the keyword '${keyword}'`);
+
+      - name: Check for developer docs commit
+        id: check-for-developer-docs-commit
+        continue-on-error: true
+        uses: actions/github-script@v6
+        env:
+          commit_messages: ${{ toJson(github.event.client_payload.branch_commit_messages) }}
+          keyword: "developer"
+        with:
+          script: |
+            // Load commit messages and keyword
+            const commitMessages = JSON.parse(process.env.commit_messages || "[]");
+            let keyword = process.env.keyword || "";
+            keyword = keyword.toLowerCase();
+
+            // Check commit messages for keyword
+            for (const commit of commitMessages) {
+              const message = commit.message.toLowerCase();
+              if (message.includes(keyword)) {
+                return;
+              }
+            }
+            throw new Error(`No commit message contains the keyword '${keyword}'`);
 
       - name: Update comment - step results
         uses: GrantBirki/comment@v2.1.1
@@ -85,8 +139,12 @@ jobs:
           vars: |
             step_number: 2
             results_table:
-              - description: "Create 2 commits"
-                passed: ${{ steps.check-commit-count.outcome == 'success' }}
+              - description: "Created initial commit"
+                passed: ${{ steps.check-for-initial-commit.outcome == 'success' }}
+              - description: "Created game docs commit"
+                passed: ${{ steps.check-for-game-docs-commit.outcome == 'success' }}
+              - description: "Created developer docs commit"
+                passed: ${{ steps.check-for-game-docs-commit.outcome == 'success' }}
 
       # END: Check practical exercise
 

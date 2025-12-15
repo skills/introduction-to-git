@@ -26,6 +26,9 @@ jobs:
       ISSUE_REPOSITORY: ${{ github.repository }}
       ISSUE_NUMBER: ${{ needs.find_exercise.outputs.issue-number }}
 
+    # Don't check unless branch is main
+    if: ${{ github.event.client_payload.branch_name == 'main' }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4

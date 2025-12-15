@@ -19,13 +19,16 @@ jobs:
     uses: skills/exercise-toolkit/.github/workflows/find-exercise-issue.yml@v0.7.0
 
   check_step_work:
-    # if: ${{ fromJSON(github.event.client_payload.branch_commit_count) >= 4 }}
     name: Check step work
     runs-on: ubuntu-latest
     needs: [find_exercise]
     env:
       ISSUE_REPOSITORY: ${{ github.repository }}
       ISSUE_NUMBER: ${{ needs.find_exercise.outputs.issue-number }}
+
+    # Don't check unless at least 5 commits have been made.
+    # 3 from previous step + 2 for this step
+    if: ${{ github.event.client_payload.branch_commit_count >= 5 }}
 
     steps:
       - name: Checkout
@@ -57,23 +60,51 @@ jobs:
 
       # START: Check practical exercise
 
-      - name: Check count of commits on branch
-        id: check-commit-count
+      - name: Check for html element commit
+        id: check-for-html-element-commit
         continue-on-error: true
         uses: actions/github-script@v6
         env:
-          commit_count: ${{ github.event.client_payload.branch_commit_count }}
-          required_count: 5
+          commit_messages: ${{ toJson(github.event.client_payload.branch_commit_messages) }}
+          keyword: "element"
         with:
           script: |
-            // Load commit count and required count
-            const commitCount = parseInt(process.env.commit_count || "0", 10);
-            const requiredCount = parseInt(process.env.required_count || "0", 10);
+            // Load commit messages and keyword
+            const commitMessages = JSON.parse(process.env.commit_messages || "[]");
+            let keyword = process.env.keyword || "";
+            keyword = keyword.toLowerCase();
 
-            // Fail the workflow if the commit count is less than required.
-            if (commitCount < requiredCount) {
-              throw new Error(`Commit count ${commitCount} is less than required ${requiredCount}`);
+            // Check commit messages for keyword
+            for (const commit of commitMessages) {
+              const message = commit.message.toLowerCase();
+              if (message.includes(keyword)) {
+                return;
+              }
             }
+            throw new Error(`No commit message contains the keyword '${keyword}'`);
+
+      - name: Check for pattern commit
+        id: check-for-pattern-commit
+        continue-on-error: true
+        uses: actions/github-script@v6
+        env:
+          commit_messages: ${{ toJson(github.event.client_payload.branch_commit_messages) }}
+          keyword: "pattern"
+        with:
+          script: |
+            // Load commit messages and keyword
+            const commitMessages = JSON.parse(process.env.commit_messages || "[]");
+            let keyword = process.env.keyword || "";
+            keyword = keyword.toLowerCase();
+
+            // Check commit messages for keyword
+            for (const commit of commitMessages) {
+              const message = commit.message.toLowerCase();
+              if (message.includes(keyword)) {
+                return;
+              }
+            }
+            throw new Error(`No commit message contains the keyword '${keyword}'`);
 
       - name: Update comment - step results
         uses: GrantBirki/comment@v2.1.1
@@ -86,8 +117,10 @@ jobs:
           vars: |
             step_number: 4
             results_table:
-              - description: "Create 2 commits"
-                passed: ${{ steps.check-commit-count.outcome == 'success' }}
+              - description: "Create html element commit"
+                passed: ${{ steps.check-for-html-element-commit.outcome == 'success' }}
+              - description: "Create pattern commit"
+                passed: ${{ steps.check-for-pattern-commit.outcome == 'success' }}
 
       # END: Check practical exercise
 

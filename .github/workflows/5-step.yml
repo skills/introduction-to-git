@@ -26,6 +26,9 @@ jobs:
       ISSUE_REPOSITORY: ${{ github.repository }}
       ISSUE_NUMBER: ${{ needs.find_exercise.outputs.issue-number }}
 
+    # Don't check unless at least 8 commits have been made
+    if: ${{ github.event.client_payload.branch_commit_count >= 8 }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -56,6 +59,52 @@ jobs:
 
       # START: Check practical exercise
 
+      - name: Check for high score tracker merge commit
+        id: check-for-high-score-tracker-merge-commit
+        continue-on-error: true
+        uses: actions/github-script@v6
+        env:
+          commit_messages: ${{ toJson(github.event.client_payload.branch_commit_messages) }}
+          keyword: "tracker"
+        with:
+          script: |
+            // Load commit messages and keyword
+            const commitMessages = JSON.parse(process.env.commit_messages || "[]");
+            let keyword = process.env.keyword || "";
+            keyword = keyword.toLowerCase();
+
+            // Check commit messages for keyword
+            for (const commit of commitMessages) {
+              const message = commit.message.toLowerCase();
+              if (message.includes(keyword)) {
+                return;
+              }
+            }
+            throw new Error(`No commit message contains the keyword '${keyword}'`);
+
+      - name: Check for calculate level commit (FF merge)
+        id: check-calculate-level-commit
+        continue-on-error: true
+        uses: actions/github-script@v6
+        env:
+          commit_messages: ${{ toJson(github.event.client_payload.branch_commit_messages) }}
+          keyword: "calculate level"
+        with:
+          script: |
+            // Load commit messages and keyword
+            const commitMessages = JSON.parse(process.env.commit_messages || "[]");
+            let keyword = process.env.keyword || "";
+            keyword = keyword.toLowerCase();
+
+            // Check commit messages for keyword
+            for (const commit of commitMessages) {
+              const message = commit.message.toLowerCase();
+              if (message.includes(keyword)) {
+                return;
+              }
+            }
+            throw new Error(`No commit message contains the keyword '${keyword}'`);
+
       - name: Update comment - step results
         uses: GrantBirki/comment@v2.1.1
         with:
@@ -67,8 +116,10 @@ jobs:
           vars: |
             step_number: 5
             results_table:
-              - description: "Merged a feature branch"
-                passed: true
+              - description: "Merged high score branch"
+                passed: ${{ steps.check-for-high-score-tracker-merge-commit.outcome == 'success' }}
+              - description: "Merged add level counter branch"
+                passed: ${{ steps.check-calculate-level-commit.outcome == 'success' }}
 
       # END: Check practical exercise
 

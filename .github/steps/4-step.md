@@ -90,9 +90,9 @@ Let's make some changes to the game then use the CLI to show the differences.
 
 Let's make some more changes to the game then use the VS Code to show the differences.
 
-1. Open `src/patterns.html`.
+1. Open `src/patterns.js`.
 
-1. At `line 4`, replace the `Null Pointer` area with the below example to change the pattern.
+1. At `line 3`, replace the `Null Pointer` area with the below example to change the pattern.
 
    ```txt
    {
@@ -113,7 +113,7 @@ Let's make some more changes to the game then use the VS Code to show the differ
 
 1. Open the **Source Control** tab. In the **Changes** list, double-click the `patterns.js` file to open the Diff (comparison) view.
 
-   <img width="350px" src="https://github.com/user-attachments/assets/5ea6e771-d89a-4240-af72-c25c057da545"/><br/>
+   <img width="350px" src="images/4-5.png"/><br/>
 
    <img width="500px" src="https://github.com/user-attachments/assets/4c410689-2a53-462f-9200-79d21bddbf2c"/>
 
@@ -129,7 +129,7 @@ Let's make some more changes to the game then use the VS Code to show the differ
 
    Notice that you can't make changes now. The staging area is locked in preparation for committing.
 
-   <img width="350px" src="https://github.com/user-attachments/assets/f313e4b3-1e27-4ea0-9789-132759f1d4fc"/><br/>
+   <img width="350px" src="images/4-8.png"/><br/>
 
    <img width="500px" src="https://github.com/user-attachments/assets/de1448eb-d0dd-4ec5-89a2-74fb4aa1cf5f"/>
 
