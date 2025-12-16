@@ -116,11 +116,11 @@ Let's also try adding files with our code editor, in this case the documentation
 
 1. In the left navigation, select the **Source Control** tab. Notice the `README.md` file is listed under the **Changes** area.
 
-   <img width="350px" src="https://github.com/user-attachments/assets/5cc48f1e-1cd9-4c06-b7f7-18138b1962ff"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/b31a12ac-ef3d-454b-8c94-7146abab0f99"/>
 
 1. Promote the file to the staging staging area by hovering over file and selecting the plus sign `+` button.
 
-   <img width="350px" src="https://github.com/user-attachments/assets/c2218c5b-f362-48c2-b5bf-55a8f193b87b"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/5c2a7e4c-244f-406c-98d3-6e1934d754e7"/>
 
 1. Enter a commit message and press the **Commit** button.
 
@@ -128,7 +128,7 @@ Let's also try adding files with our code editor, in this case the documentation
    Start game documentation
    ```
 
-   <img width="350px" src="https://github.com/user-attachments/assets/a771b674-1fc2-40dc-a9bf-080bf83c46fc"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/fc80aa05-0f1f-4c68-8e8a-95cd9d41321b"/>
 
 1. For a second commit, also add the following content to `README.md`.
 
@@ -147,7 +147,7 @@ Let's also try adding files with our code editor, in this case the documentation
    Start developer docs
    ```
 
-   <img width="350px" src="https://github.com/user-attachments/assets/e140ed6a-cb1b-4a2c-980e-53fb4d7ddd74"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/c2301467-c3e7-43fa-95d8-bdaf64ded337"/>
 
 1. With your new commits added to the repository, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next steps.
 
