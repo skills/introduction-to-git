@@ -112,8 +112,8 @@ gitGraph LR:
 
 ### What are the important Git commands?
 
-- `git branch "my-new-feature"` - Start a branch from the current branch.
-- `git checkout "my-new-feature"` - Change your working directory to a different version from the repository history.
+- `git branch my-new-feature` - Start a branch from the current branch.
+- `git checkout my-new-feature` - Change your working directory to a different version from the repository history.
 - `git merge` - Apply the commits from one branch onto another branch. (Default: Fast forward merge)
 
 <!-- > [!TIP]
@@ -241,7 +241,7 @@ Let's start a branch and practice committing changes to it.
 
 ### ⌨️ Activity 2: Commit to a branch (using VS Code)
 
-1. In the left navigation, open the **Source Control** tab. Make sure the **Graph** panel is visible. Let's watch it update as we apply changes.
+1. In the left navigation, open the **Source Control** tab. Make sure the **Graph** panel is still visible (from step 3). Let's watch it update as we apply changes.
 
 1. To the right of the project name, click on the branch name `main`. A menu will appear with options.
 
