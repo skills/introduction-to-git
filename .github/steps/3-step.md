@@ -74,10 +74,10 @@ Here are a few of the common commands and options you will often use.
    🪧 Notice the `README.md` file was removed.
    <img width="350px" src="https://github.com/user-attachments/assets/ea61c817-0ac2-430e-b501-d43ea903dae3"/>
 
-1. Return to the newest commit. Notice the `README.md` file has returned. 🧐
+1. Return to the latest commit on `main`. Notice the `README.md` file has returned. 🧐
 
    ```bash
-   git checkout -
+   git checkout main
    ```
 
    <img width="350px" src="https://github.com/user-attachments/assets/5814f14b-fbf5-4090-90f6-32f815f8b773"/><br/>
