@@ -4,6 +4,10 @@ You've been working on a project and realized organizing backups has become diff
 
 After some quick searching, you learned about [Git](https://git-scm.com/). Supposedly, it makes keeping track of changes and collaborating with others easy. It removes the confusion of older methods like file naming conventions, share drives, and emailed copies of files.
 
+> [!IMPORTANT]
+> This exercise teaches Git usage on a machine with it already installed.
+> If you want to install it on your own computer, we recommend the official [Git site](https://git-scm.com) for installation guides, since there are many computer configurations.
+
 ### 📖 Theory: What is Version Control?
 
 Version control systems solve common problems developers face when managing code changes over time. Issues like:
@@ -63,10 +67,6 @@ For example, the community has streamlined Git into nearly all development workf
 ### ⌨️ Activity: Open the sample project
 
 To start practicing Git, let's first open a pre-configured development environment and explore the sample project.
-
-> [!IMPORTANT]
-> This exercise teaches Git usage, not Git installation.
-> Since there are many computer configurations, we recommend the official [Git site](https://git-scm.com) for installation guides.
 
 1. Right-click the below button to open the **Create Codespace** page in a new tab. Use the default configuration.
 
