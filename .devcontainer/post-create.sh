@@ -11,6 +11,10 @@ git config --global core.pager "less -FX"
 # Delete the .git folder in the exercise repo to prevent from showing in version control
 rm -R -f /workspaces/${RepositoryName}/.git
 
+# Replace ${RepositoryName} with actual repository name in container settings
+SETTINGS_FILE="/home/vscode/.vscode-remote/data/Machine/settings.json"
+sed -i "s/\${RepositoryName}/${RepositoryName}/g" "$SETTINGS_FILE"
+
 # Create sample project if it doesn't exist
 REPO_DIR="/workspaces/stack-overflown"
 if [ ! -d "$REPO_DIR" ]; then

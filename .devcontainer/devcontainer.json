@@ -10,7 +10,8 @@
           "**/.git": true,
           "**/.codespaces": true,
           "**/exercise-monitor.log": true,
-          "**/*getting-started-with-git": true
+          // This variable is not dynamic. It is replaced by post-create.sh
+          "**/${RepositoryName}": true
         },
 
         // Hide publish button
