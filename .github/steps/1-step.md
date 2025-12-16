@@ -90,6 +90,9 @@ To start practicing Git, let's first open a pre-configured development environme
 
    <img width="500px" src="https://github.com/user-attachments/assets/a20529f3-8e42-464b-8d84-b0880dd14383"/>
 
+> [!TIP]
+> Feel free to leave the game open and give it more trial-runs as we make changes! 🧑‍🚀
+
 ### ⌨️ Activity 2: Git in the CLI
 
 Let's start with using Git in the command line interface (CLI). This is the source of all Git functionality and most powerful option.
