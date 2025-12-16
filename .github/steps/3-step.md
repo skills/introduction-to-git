@@ -72,6 +72,7 @@ Here are a few of the common commands and options you will often use.
    <img width="500px" src="https://github.com/user-attachments/assets/4d0f6660-e689-47a2-874e-c3d71b32975b"/><br/>
 
    🪧 Notice the `README.md` file was removed.
+   
    <img width="350px" src="https://github.com/user-attachments/assets/ea61c817-0ac2-430e-b501-d43ea903dae3"/>
 
 1. Return to the latest commit on `main`. Notice the `README.md` file has returned. 🧐
@@ -88,13 +89,13 @@ Here are a few of the common commands and options you will often use.
 
 1. In the left navigation, open the **Source Control** tab.
 
-1. Right-click on the **Changes** header and enable **Graph**, if it is not selected.
+1. Right-click on the **Changes** header and enable the **Graph** option.
 
-   (image)
+   <img width="350px" src="https://github.com/user-attachments/assets/c5bfb32d-198a-4baa-9ae5-156ee283256c"/>
 
 1. Inspect the **Graph** panel. Notice the timeline list of your recent commits.
 
-   <img width="350px" src="https://github.com/user-attachments/assets/ce8879ea-7db6-48a4-b686-4a5e147066d4"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/860f780f-98ca-4c0e-bb0f-e7d65fb84a67"/><br/>
 
 1. Click the commit names to expand a list of the files modified by that commit.
 
