@@ -140,6 +140,8 @@ Before we can start versioning our game, let's provide Git our identity so it ca
 
    <img width="500px" src="https://github.com/user-attachments/assets/62688039-3601-4a23-8f61-408210faff0a"/>
 
+1. With your author details configured,, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next steps.
+
 > [!TIP]
 > You can also change your username and email per project, if you have multiple accounts. On an **existing** project, use `--local` instead of `--global`.
 

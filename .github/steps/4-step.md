@@ -146,6 +146,8 @@ Let's make some more changes to the game then use the VS Code to show the differ
    Make null pointer pattern easier to complete
    ```
 
+1. With your new commits added to the repository, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next steps.
+
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 

@@ -149,6 +149,8 @@ Let's also try adding files with our code editor, in this case the documentation
 
    <img width="350px" src="https://github.com/user-attachments/assets/e140ed6a-cb1b-4a2c-980e-53fb4d7ddd74"/>
 
+1. With your new commits added to the repository, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next steps.
+
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 

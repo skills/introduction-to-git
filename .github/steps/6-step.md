@@ -22,7 +22,7 @@ Here is a typical workflow:
 
 ### ⌨️ Activity: Quick Review
 
-Answer one quick question, and you are all done! 🎉
+Answer one quick question for Mona, and she will share the final review! 🎉
 
 **What is your favorite feature of Git?**
 

@@ -94,6 +94,8 @@ Here are a few of the common commands and options you will often use.
 
    <img width="350px" src="https://github.com/user-attachments/assets/1b3d4e1e-c329-4f4a-895d-2276d19b17ca"/>
 
+1. With your exploration of the Git history finished, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next steps.
+
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 

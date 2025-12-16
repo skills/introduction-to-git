@@ -339,6 +339,8 @@ Let's start a branch and practice committing changes to it.
 
    <img width="350px" src="https://github.com/user-attachments/assets/b75f4349-c3da-4228-95c9-9025c33f01c2"/>
 
+1. With both branches merged, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next steps.
+
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
