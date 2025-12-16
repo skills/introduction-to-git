@@ -148,7 +148,7 @@ Before we can start versioning our game, let's provide Git our identity so it ca
 1. With your author details configured,, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next steps.
 
 > [!TIP]
-> You can also change your username and email per project, if you have multiple accounts. On an **existing** project, use `--local` instead of `--global`.
+> You can also change your username and email per project, if you have multiple accounts. On an **existing** project repository, use `--local` instead of `--global`.
 
 <details>
 <summary>Having trouble? 🤷</summary><br/>
