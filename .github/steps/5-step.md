@@ -243,9 +243,9 @@ Let's start a branch and practice committing changes to it.
 
 1. In the left navigation, open the **Source Control** tab. Make sure the **Graph** panel is still visible (from step 3). Let's watch it update as we apply changes.
 
-1. To the right of the project name, click on the branch name `main`. A menu will appear with options.
+1. In the lower status bar on the left, click the branch name `main`. A menu will appear with options.
 
-   <img width="350px" src="https://github.com/user-attachments/assets/2c9fdd37-e63c-4d26-82b6-d9ca7c5356e1"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/ca6c38bc-631e-48f4-980b-434a9b0f0fc1"/><br/>
 
 1. Select the **Create new branch...** option and use the below name.
 
@@ -321,13 +321,13 @@ Let's start a branch and practice committing changes to it.
 
 1. To prepare for merging, click the branch name again and select the `main` branch.
 
-   <img width="350px" src="https://github.com/user-attachments/assets/207c97e2-c0ad-4d87-ac76-f4ad7684b9fc"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/133f6dfa-c2fc-44e0-a945-4a62101abcf6"/><br/>
 
    <img width="350px" src="https://github.com/user-attachments/assets/1c2e4ce9-3c10-4fb0-9eba-e789bd1de525"/>
 
 1. Click the three dot menu (`...`), then `Branch`, and select `Merge...`. Notice it performed a normal **Fast Forward** style merge.
 
-   <img width="350px" src="https://github.com/user-attachments/assets/fdc61118-afc8-4e80-bac1-03876b883970"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/7b21ad36-5012-4fb2-a30a-c02a5884ea52"/><br/>
 
    <img width="350px" src="https://github.com/user-attachments/assets/aa35bdc4-9a90-4c62-a43c-9de9838d15a6"/><br/>
 
@@ -335,7 +335,7 @@ Let's start a branch and practice committing changes to it.
 
 1. Click the three dot menu (`...`), then `Branch`, and select `Delete Branch...`.
 
-   <img width="350px" src="https://github.com/user-attachments/assets/af638c23-a655-4ff1-8188-994ca71ee115"/><br/>
+   <img width="350px" src="https://github.com/user-attachments/assets/7b21ad36-5012-4fb2-a30a-c02a5884ea52"/><br/>
 
    <img width="350px" src="https://github.com/user-attachments/assets/b75f4349-c3da-4228-95c9-9025c33f01c2"/>
 
