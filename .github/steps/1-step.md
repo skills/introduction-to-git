@@ -72,6 +72,8 @@ To start practicing Git, let's first open a pre-configured development environme
 
    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/{{full_repo_name}}?quickstart=1)
 
+   > 🪧 **Note**: Typically a [GitHub Codespace](https://github.com/features/codespaces) automatically includes the repository code and all required settings. This is a modified experience so you can practice from scratch.
+
 1. Confirm the **Repository** field is your copy of the exercise, not the original, then click the green **Create Codespace** button.
 
    - ✅ Your copy: `/{{full_repo_name}}`
