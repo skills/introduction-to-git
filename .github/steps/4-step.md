@@ -11,6 +11,13 @@ Git uses symbols and coloring to show file changes:
 - `+` in green indicates lines that were added
 - `-` in red indicates lines that were removed
 
+Example:
+
+```diff
++ This is a line that was added
+- This is a line that was removed
+```
+
 > [!TIP]
 > You can change Git's default comparison colors with the below commands.
 >
