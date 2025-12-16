@@ -86,7 +86,13 @@ Here are a few of the common commands and options you will often use.
 
 ### ⌨️ Activity 2: Explore the history (using VS Code)
 
-1. In the left navigation, open the **Source Control** tab and expand the **Graph** panel. Notice the timeline list of your recent commits.
+1. In the left navigation, open the **Source Control** tab.
+
+1. Right-click on the **Changes** header and enable **Graph**, if it is not selected.
+
+   (image)
+
+1. Inspect the **Graph** panel. Notice the timeline list of your recent commits.
 
    <img width="350px" src="https://github.com/user-attachments/assets/ce8879ea-7db6-48a4-b686-4a5e147066d4"/><br/>
 

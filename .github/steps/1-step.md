@@ -77,7 +77,7 @@ To start practicing Git, let's first open a pre-configured development environme
 1. Confirm the **Repository** field is your copy of the exercise, not the original, then click the green **Create Codespace** button.
 
    - ✅ Your copy: `/{{full_repo_name}}`
-   - ❌ Original: `/skills-dev/getting-started-with-git`
+   - ❌ Original: `/skills-dev/introduction-to-git`
 
 1. Wait a moment for Visual Studio Code to load in your browser.
 
@@ -145,7 +145,7 @@ Before we can start versioning our game, let's provide Git our identity so it ca
 
    <img width="500px" src="https://github.com/user-attachments/assets/62688039-3601-4a23-8f61-408210faff0a"/>
 
-1. With your author details configured,, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next steps.
+1. With your author details configured, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next steps.
 
 > [!TIP]
 > You can also change your username and email per project, if you have multiple accounts. On an **existing** project repository, use `--local` instead of `--global`.
