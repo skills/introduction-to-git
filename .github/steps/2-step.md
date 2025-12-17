@@ -154,8 +154,6 @@ Let's also try adding files with our code editor, in this case the documentation
 <details>
 <summary>Having trouble? 🤷</summary><br/>
 
-- If `git status` shows unexpected files, double-check the files you have staged with `git add <file name>`
-- Use `git add .` to stage all files at once (except ignored files)
-- Remember to commit the `.gitignore` file itself so others can benefit from it
+- If `git status` shows the wrong files, you can remove them from staging with `git restore --staged <filename>`
 
 </details>
