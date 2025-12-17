@@ -76,7 +76,7 @@ Let's add version control to our game and commit the current version.
    git status
    ```
 
-   <img width="500px" src="https://github.com/user-attachments/assets/5b58aefa-8180-4082-8962-ce0dbd2d1879"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/77780813-7dbc-4aaa-8df8-d11938674b1f"/>
 
 1. Commit the changes to the repository history. Our project history is now started! :octocat:
 
@@ -84,7 +84,7 @@ Let's add version control to our game and commit the current version.
    git commit -m "Initial commit"
    ```
 
-   <img width="500px" src="https://github.com/user-attachments/assets/975f12ba-98d6-4767-bf7a-71ec129f0d70"/>
+   <img width="500px" src="https://github.com/user-attachments/assets/da92ec36-8a89-4e8b-9592-c55e6f09b7af"/>
 
 1. Check repository status. Notice the "working tree clean" which means our current copy perfectly matches the history.
 
@@ -104,7 +104,7 @@ Let's also try adding files with our code editor, in this case the documentation
    README.md
    ```
 
-   <img width="350px" src="https://github.com/user-attachments/assets/e068334f-0c2f-47be-84a2-64839f5b4347"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/df391b20-6df5-4195-a03a-55975da30b46"/>
 
 1. Open the file and insert the following content.
 
