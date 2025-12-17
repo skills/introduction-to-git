@@ -18,7 +18,7 @@ _Use Git version control to work on a game using command line (CLI) and VS Code.
 In this exercise, you will:
 
 1. Understand what version control is and why developers use it.
-1. Configure your Git identity and explore Git interfaces.
+1. Configure your Git identity.
 1. Create your first repository and make commits.
 1. View project history and compare file changes.
 1. Work with branches to experiment safely.
