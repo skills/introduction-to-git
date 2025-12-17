@@ -14,6 +14,9 @@
           "**/${RepositoryName}": true
         },
 
+        "livePreview.openPreviewTarget": "External Browser",
+	      "livePreview.serverRoot": "stack-overflown/src",
+
         // Hide publish button
         "git.showActionButton": {
           "publish": false
