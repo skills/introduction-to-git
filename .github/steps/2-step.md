@@ -58,8 +58,8 @@ Let's add version control to our game and commit the current version.
 1. Promote the game files to the staging area. This will create a locked copy, preparing them for committing to the repository history.
 
    ```bash
-   git add src/main.html
-   git add src/main.js
+   git add src/index.html
+   git add src/index.js
    git add src/patterns.js
    git add src/style.css
    ```
@@ -135,10 +135,10 @@ Let's also try adding files with our code editor, in this case the documentation
    ```md
    ## How to Develop
 
-   - `main.html` - the game container for playing
-   - `style.css` - the game formatting and styling
-   - `main.js` - the primary game logic
+   - `index.html` - the game container for playing
+   - `index.js` - the primary game logic
    - `patterns.js` - the error patterns to match during gameplay
+   - `style.css` - the game formatting and styling
    ```
 
 1. Promote the change to staging and commit with the below message.

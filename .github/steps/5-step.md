@@ -153,7 +153,7 @@ Let's start a branch and practice committing changes to it.
 
    <img width="500px" src="https://github.com/user-attachments/assets/6eb8ba89-73b1-4398-b567-3833fa086d80"/>
 
-1. Open `main.js` so we can fix the high score feature.
+1. Open `index.js` so we can fix the high score feature.
 
 1. On `line 41`, insert a variable for high score and then commit it.
 
@@ -162,7 +162,7 @@ Let's start a branch and practice committing changes to it.
    ```
 
    ```bash
-   git add src/main.js
+   git add src/index.js
    git commit -m "Add new variable for tracking high score"
    ```
 
@@ -175,7 +175,7 @@ Let's start a branch and practice committing changes to it.
    ```
 
    ```bash
-   git add src/main.js
+   git add src/index.js
    git commit -m "Add loading of stored high score"
    ```
 
@@ -195,7 +195,7 @@ Let's start a branch and practice committing changes to it.
    ```
 
    ```bash
-   git add src/main.js
+   git add src/index.js
    git commit -m "Add logic to keep track of highest score"
    ```
 
@@ -257,7 +257,7 @@ Let's start a branch and practice committing changes to it.
 
    <img width="350px" src="https://github.com/user-attachments/assets/e3ce472c-650c-4674-a778-ad2e310ef0c6"/>
 
-1. Open `main.html`. On `line 21`, insert a new element for showing the current level, then commit the change.
+1. Open `index.html`. On `line 21`, insert a new element for showing the current level, then commit the change.
 
    ```diff
    <h3>Level</h3>
@@ -270,7 +270,7 @@ Let's start a branch and practice committing changes to it.
    Add element to display current level
    ```
 
-1. Open `main.js` so we can add the level counter.
+1. Open `index.js` so we can add the level counter.
 
 1. On `line 42`, add 2 variables for tracking level, then commit the change.
 

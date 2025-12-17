@@ -38,7 +38,7 @@ The `git diff` command shows differences between development states.
 
 Let's make some changes to the game then use the CLI to show the differences.
 
-1. Open `src/main.html`.
+1. Open `src/index.html`.
 
 1. At `line 20`, replace the `info-section` area about scoring with the below example.
 
@@ -60,7 +60,7 @@ Let's make some changes to the game then use the CLI to show the differences.
 1. View the difference between your working directory and the last commit.
 
    ```bash
-   git diff src/main.html
+   git diff src/index.html
    ```
 
    <img width="500px" src="https://github.com/user-attachments/assets/ce56cfc4-63e0-4827-abac-8ae645238ab8"/>
@@ -68,19 +68,19 @@ Let's make some changes to the game then use the CLI to show the differences.
 1. Promote the changes into the staging area.
 
    ```bash
-   git add src/main.html
+   git add src/index.html
    ```
 
 1. Run the same comparison again. Notice that no changes are displayed, because the working directory now matches the staging area.
 
    ```bash
-   git diff src/main.html
+   git diff src/index.html
    ```
 
 1. View the differences between the staging area and the last commit.
 
    ```bash
-   git diff --staged src/main.html
+   git diff --staged src/index.html
    ```
 
    <img width="500px" src="https://github.com/user-attachments/assets/3c3be154-67f4-4b76-a5fd-230e03f90ddc"/>
