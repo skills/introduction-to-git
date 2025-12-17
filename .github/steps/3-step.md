@@ -73,7 +73,7 @@ Here are a few of the common commands and options you will often use.
 
    🪧 Notice the `README.md` file was removed.
    
-   <img width="350px" src="https://github.com/user-attachments/assets/ea61c817-0ac2-430e-b501-d43ea903dae3"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/65091c64-3bef-47ad-a4ff-82f3260aa903"/>
 
 1. Return to the latest commit on `main`. Notice the `README.md` file has returned. 🧐
 
@@ -83,7 +83,7 @@ Here are a few of the common commands and options you will often use.
 
    <img width="350px" src="https://github.com/user-attachments/assets/5814f14b-fbf5-4090-90f6-32f815f8b773"/><br/>
 
-   <img width="350px" src="https://github.com/user-attachments/assets/da8b4fe4-2e28-42bc-a35a-859b3f0c8b29"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/fd673876-ca3b-4184-9f7f-c4bf3ae388a6"/>
 
 ### ⌨️ Activity 2: Explore the history (using VS Code)
 
@@ -99,7 +99,7 @@ Here are a few of the common commands and options you will often use.
 
 1. Click the commit names to expand a list of the files modified by that commit.
 
-   <img width="350px" src="https://github.com/user-attachments/assets/1b3d4e1e-c329-4f4a-895d-2276d19b17ca"/>
+   <img width="350px" src="https://github.com/user-attachments/assets/42310a18-84a4-4dca-8f45-18d589e187c0"/>
 
 1. With your exploration of the Git history finished, Mona should already be busy checking your work. Give her a moment and keep watch in the comments. You will see her respond with progress info and the next steps.
 
